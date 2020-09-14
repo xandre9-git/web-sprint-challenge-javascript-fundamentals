@@ -27,13 +27,28 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+The `.forEach` method provides an executed function once for each array element but does not return anything. Function can be made to mutate the called array.
+The `.map` method creates a new array from the result of calling a function on every element in called array.
+
 2. Explain the difference between a callback and a higher order function.
+
+A callback is a function that is passed into another function and is expected to be called by the function it is passed into. A higher order function is a function that takes another function as an argument and can return a different function as a result.
 
 3. What is closure?
 
+Closure is the ability of an inner function having access to outer function variables.
+
 4. Describe the four rules of the 'this' keyword.
 
+  1. When `this` is used in the global scope its value will show in the window/console Object.
+  2. With implicit binding if a dot calls a function, the object before the dot is what is referenced to with `this`.
+  3. New binding usage of `this` references the `new` object that is created with a constructor.
+  4. Explicit binding causes `this` to explicity be defined to the the object that is being called, applied or bound with the methods `.call()`, `.apply()`, or `.bind()`.
+
+
 5. Why do we need super() in an extended class?
+
+The `super()` method is needed in an extended class in order to access and call functions on the parent object.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
@@ -72,7 +87,7 @@ Create constructors, bind methods, and create cuboids in this prototypes challen
 #### Task D: Classes
 
 Once you have completed the prototypes challenge, it's time to convert all your hard work into classes.
-* [ ] Use the [classes.js](challenges/classes.js) link to get started. Read the instructions carefully!
+* [x] Use the [classes.js](challenges/classes.js) link to get started. Read the instructions carefully!
 
 In your solutions, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
@@ -84,8 +99,8 @@ There are a few stretch problems found throughout the files, don't work on them 
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
-- [ ] Add your team lead as a reviewer on the pull-request
-- [ ] Your team lead will count the project as complete after receiving your pull-request
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
+- [x] Add your team lead as a reviewer on the pull-request
+- [x] Your team lead will count the project as complete after receiving your pull-request
 
 
