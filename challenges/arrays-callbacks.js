@@ -21,11 +21,6 @@ The zoos want to display both the scientific name and the animal name in front o
 
 */
 
-// function scienceAnimal(arr){
-//   arr.forEach.
-// }
-
-
 
 const displayNames = [];
 
@@ -83,9 +78,11 @@ console.log(populationTotal);
   * The consume function should return the invocation of cb, passing a and b into cb as arguments
 */
 
-function consume (a, b, cb){
-  return cb(a, b)  
-}
+// function consume (a, b, cb){
+//   return cb(a, b)  
+// }
+
+const consume = (a, b, cb) => cb(a,b)
 
 
 /* Step 2: Create several functions to callback with consume();
@@ -94,17 +91,23 @@ function consume (a, b, cb){
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
 
-function add (a, b){
-  return a + b;
-}
+// function add (a, b){
+//   return a + b;
+// }
 
-function multiply (a, b){
-  return a * b;
-}
+const add = (a, b) =>  a + b;
 
-function greeting(firstname, lastname){
-  return `Hello ${firstname} ${lastname}, nice to meet you!`
-}
+// function multiply (a, b){
+//   return a * b;
+// }
+
+const multiply = (a, b) =>  a * b;
+
+// function greeting(firstname, lastname){
+//   return `Hello ${firstname} ${lastname}, nice to meet you!`
+// }
+
+const greeting = (firstname, lastname) => `Hello ${firstname} ${lastname}, nice to meet you!`;
 
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
