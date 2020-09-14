@@ -43,8 +43,11 @@ The zoos need a list of all their animal's names (animal_name only) converted to
 
 */
 
-const lowCaseAnimalNames = zooAnimals.map(function(zooAnimals){
-  zooAnimals.animal_name.toLowerCase();
+
+const lowCaseAnimalNames = [];
+
+zooAnimals.map(function(zooAnimals){
+  lowCaseAnimalNames.push(zooAnimals.animal_name.toLowerCase());
 })
 console.log(lowCaseAnimalNames);
 
@@ -108,8 +111,6 @@ function greeting(firstname, lastname){
 console.log(consume(2, 2, add)); // 4
 console.log(consume(10, 16, multiply)); // 160
 console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
-
-
 
 
 /*
