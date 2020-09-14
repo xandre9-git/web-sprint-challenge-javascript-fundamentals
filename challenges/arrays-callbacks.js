@@ -81,10 +81,7 @@ console.log(populationTotal);
 */
 
 function consume (a, b, cb){
-    function cb (a, b){
-
-    }
-  return
+  return cb(a, b)  
 }
 
 
@@ -102,13 +99,15 @@ function multiply (a, b){
   return a * b;
 }
 
-function greeting
+function greeting(firstname, lastname){
+  return `Hello ${firstname} ${lastname}, nice to meet you!`
+}
 
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
-// console.log(consume(2, 2, add)); // 4
-// console.log(consume(10, 16, multiply)); // 160
-// console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
+console.log(consume(2, 2, add)); // 4
+console.log(consume(10, 16, multiply)); // 160
+console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
 
 
 
